@@ -14,15 +14,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData(app.globalData)
-  },
+    let page = this;
+    wx.request({
+      url: "http://picchain.herokuapp.com/api/v1/pins",
+      method: 'GET',
+      success(res) {
+        const pins = res.data.pins;
 
-  showGif(e) {
-    const data = e.currentTarget.dataset;
-    const pin = data.pin;
+        // Update local data
+        page.setData({
+          pins: pins
+        });
 
-    wx.navigateTo({
-      url: `../show/show?id=${pin.id}`
+        wx.hideToast();
+      }
     });
   },
 
