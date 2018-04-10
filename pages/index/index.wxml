@@ -1,4 +1,4 @@
-
+<view class="p">Testing</view>
 <view class="card-container">
   <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="showPin"  class="card" style="background-image: url('{{pin.image}}');" data-gif="{{pin}}">
 
