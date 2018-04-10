@@ -31,6 +31,15 @@ Page({
     });
   },
 
+  showPin(e) {
+    const data = e.currentTarget.dataset;
+    const pin = data.pin;
+
+    wx.navigateTo({
+      url: "../show/show"
+    });
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
