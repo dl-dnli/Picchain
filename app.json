@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/map/map",
+    "pages/camera/camera"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "PicChain",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "selectedColor": "white",
+    "borderColor": "white",
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "images/green/map.png",
+        "selectedIconPath": "images/grey/map.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/green/list.png",
+        "selectedIconPath": "images/grey/list.png",
+        "text": ""
+      },
+      {
+        "pagePath": "pages/camera/camera",
+        "iconPath": "images/green/camera.png",
+        "selectedIconPath": "images/grey/camera.png",
+        "text": ""
+      }
+    ]
+  }
+}
