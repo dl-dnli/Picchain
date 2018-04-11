@@ -1,13 +1,5 @@
 Page({
   data: {
-    latitude: 31.22352000000002,
-    longitude: 121.45590999999999,
-    markers: [{
-      id: 1,
-      latitude: 31.22352000000002,
-      longitude: 121.45590999999999,
-      name: 'T.I.T 创意园'
-    }],
     covers: [{
       latitude: 31.22352000000002,
       longitude: 121.45590999999999,
@@ -17,6 +9,23 @@ Page({
         longitude: 121.45590999999999,
       iconPath: '/images/location.png'
     }]
+  },
+  onLoad: function (options) {
+    let page = this;
+    wx.request({
+      url: "http://picchain.herokuapp.com/api/v1/pins",
+      method: 'GET',
+      success(res) {
+        const pins = res.data.pins;
+
+        // Update local data
+        page.setData({
+          pins: pins
+        });
+
+        wx.hideToast();
+      }
+    });
   },
   onReady: function (e) {
     this.mapCtx = wx.createMapContext('myMap');
@@ -61,8 +70,8 @@ Page({
     this.mapCtx.includePoints({
       padding: [10],
       points: [{
-        latitude: 31.22352000000002,
-        longitude: 121.45590999999999,
+        latitude: pin.latitude,
+        longitude: pin.longitude,
       }]
     })
   }
