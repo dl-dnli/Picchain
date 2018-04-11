@@ -14,16 +14,48 @@ Page({
   onLoad: function (options) {
   
   },
+  // chooseimage: function () {
+  //   var _this = this;
+  //   wx.chooseImage({
+  //     count: 1, // 默认9
+  //     sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
+  //     sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+  //     success: function (res) {
+  //       // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
+  //       _this.setData({
+  //         tempFilePaths: res.tempFilePaths
+  //       })
+  //     }
+  //   })
+  // },
+
   chooseimage: function () {
-    var _this = this;
-    wx.chooseImage({
-      count: 1, // 默认9
-      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
-      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+    var that = this;
+    wx.showActionSheet({
+      itemList: ['从相册中选择', '拍照'],
+      itemColor: "#8CC152",
       success: function (res) {
-        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片
-        _this.setData({
-          tempFilePaths: res.tempFilePaths
+        if (!res.cancel) {
+          if (res.tapIndex == 0) {
+            that.chooseWxImage('album')
+          } else if (res.tapIndex == 1) {
+            that.chooseWxImage('camera')
+          }
+        }
+      }
+    })
+
+  },
+
+  chooseWxImage: function (type) {
+    var that = this;
+    wx.chooseImage({
+      sizeType: ['original', 'compressed'],
+      sourceType: [type],
+      success: function (res) {
+        console.log(res);
+        that.setData({
+          tempFilePaths: res.tempFilePaths[0],
         })
       }
     })
@@ -33,15 +65,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function (res) {
-    if (wx.createCameraContext()) {
-      this.cameraContext = wx.createCameraContext('myCamera')
-    }
-  },
-
-  startTakePhoto: function () {
-    this.cameraContext.takePhoto({
-    })
-  },  
+  }, 
 
   /**
    * 生命周期函数--监听页面显示

@@ -1,1 +1,39 @@
-/* pages/camera/camera.wxss */
+.camera-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+} 
+
+.photo-container {
+  height: 650rpx;
+  width: 650rpx;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-picture {
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.input{
+    padding-left: 10px;
+    height: 35px;
+}
+
+.picinput{
+    border-top: 0.5px solid #8a8a8a;
+    width: 80%;
+    position: relative;
+    background-color: #FFFFFF;
+    line-height: 2;
+    font-size: 17px;
+}
+
