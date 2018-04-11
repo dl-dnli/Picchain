@@ -1,5 +1,6 @@
 // pages/index/index.js
 const app = getApp()
+var order = ['demo1', 'demo2', 'demo3']
 
 Page({
 
@@ -7,9 +8,22 @@ Page({
    * 页面的初始数据
    */
   data: {
+    scrollTop: 100,
+    scrollLeft: 0,
+    flag: true
+  },
+
+  show: function () {
+
+    this.setData({ flag: false })
 
   },
 
+  hide: function () {
+
+    this.setData({ flag: true })
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -31,14 +45,14 @@ Page({
     });
   },
 
-  showPin(e) {
-    const data = e.currentTarget.dataset;
-    const pin = data.pin;
+  // showPin(e) {
+  //   const data = e.currentTarget.dataset;
+  //   const pin = data.pin;
 
-    wx.navigateTo({
-      url: "../show/show"
-    });
-  },
+  //   wx.navigateTo({
+  //     url: "../show/show"
+  //   });
+  // },
 
   addLocation() {
     wx.navigateTo({

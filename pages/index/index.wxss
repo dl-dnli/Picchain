@@ -57,3 +57,71 @@
   bottom: 20px;
   right: 35px;  
 }
+
+.page-section-title {
+  margin: 20rpx;
+  font-size: 40rpx;
+}
+
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 450rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 50%;
+  height: 450rpx;
+  background-size: cover;
+  margin-left: 15rpx;
+}
+
+.modal-scroll-view-item_H {
+  display: inline-block;
+  width: 90%;
+  height: 900rpx;
+  background-size: cover;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #1AAD19; */
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-1:before{
+  /* content: 'A'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-box{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  background:rgba(0,0,0,0.7);
+  overflow: hidden;
+  }
+
+.modal-body{
+  position:relative;
+  }
+
+.modal-content{
+  /* width: 60%; */
+  /* margin:0 10% 0 30%; */
+  overflow: hidden;
+  border-radius: 10rpx;}
+
+.modal-content{
+  width: 100%;
+  height: 800px; 
+}
