@@ -1,12 +1,15 @@
-<view class="banner" style="background-image: url('http://foundtheworld.com/wp-content/uploads/2015/12/Golden-Gate-Bridge-8.jpg');" />
-
-
+<view class="banner" style="background-image: url('{{pin.image}}');" />
 
 <view class="upv-tag">
   <view class="message" wx:for="{{reviews}}" wx:for-item="review" wx:key="review.id">
     <view class="ico-uvn">
       <image src="/images/grey/upvote.png" class="icon" />
       <view class="h5">{{review.upvotes}}</view>
+      <image class="avatar-small" src="{{review.image}}" />
+      <view class="author-name">
+        <view class="h3">{{review.name}}</view>
+        <view class="date">{{review.date}}</view>
+      </view>
     </view>
     <view class="h5">{{review.tags}}</view>
   </view>
@@ -14,19 +17,34 @@
 
 <view class="mid">
   <view class="invisi-box">
-    <view class="message" wx:for="{{reviews}}" wx:for-item="review" wx:key="review.id">
-      <image class="avatar-large" src="{{review.image}}" />
+    <view class="message" wx:for="{{vendor}}" wx:for-item="v" wx:key="v.id">
+      <image class="avatar-large" src="{{v.image}}" />
       <view class="message-name">
-        <view class="h3">{{review.name}}</view>
-        <view class="date">{{review.date}}</view>
+        <view class="h3">{{v.name}}</view>
       </view>
-    </view>
   </view>
-</view>
+  </view>
+  </view>
+  <view class="lowmid">
+  <view class="dec" wx:for="{{vendor}}" wx:for-item="v" wx:key="v.id">
+  <view class="h3">{{v.description}}</view>
+  <view class="h4">{{v.prize}}</view>
+  </view>
+  </view>
 
 <view class="bot">
   <view class="message" wx:for="{{reviews}}" wx:for-item="review" wx:key="review.id">
     <view class="h5">{{review.location}}</view>
+    <view class="map-icon">
+      <image src="/images/white/map2.png" class="icon" />
+    </view>
+  </view>
+</view>
+
+
+<view class="bot">
+  <view class="message" wx:for="{{vendors}}" wx:for-item="vendor" wx:key="review.id">
+    <view class="h5">{{vendor.description}}</view>
     <view class="map-icon">
       <image src="/images/white/map2.png" class="icon" />
     </view>

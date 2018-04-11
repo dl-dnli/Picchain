@@ -4,10 +4,11 @@
       style="width: 100%; height: 100vh;"
       latitude="{{latitude}}"
       longitude="{{longitude}}"
-      markers="{{markers}}"
       covers="{{covers}}"
       show-location
     ></map>
     <button bindtap="moveToLocation" class="page-body-button" type="primary">移动位置</button>
   </view>
+
+  <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindmarkertap="markertap"  class="covers" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}" />
     

@@ -12,8 +12,18 @@ Page({
         "upvotes": '120',
         "image": 'https://kitt.lewagon.com/placeholder/users/gabriel-dehan',
         "date": '01/13/17',
-        "location": 'St. John Rd., Shanghai',
+        "location": '100 St. John Rd., Shanghai',
         "tags": '#lovely'
+      }
+    ],
+    "vendor": [
+      {
+        "id": 1,
+        "name": "Dan Li's Coffee",
+        "image": 'http://businessupperhand.com/wp-content/uploads/2013/01/coffee-shop-1.jpg',
+        "location": 'St. John Rd., Shanghai',
+        "description": 'The best coffee in town',
+        "prize": 'A free cup of coffee for the most upvoted photo!'
       }
     ]
   },
@@ -33,9 +43,9 @@ Page({
         const pin = res.data;
 
         // Update local data
-        that.setData(
+        that.setData({
           pin
-        );
+        });
 
         wx.hideToast();
       }
