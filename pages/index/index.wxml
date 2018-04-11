@@ -71,7 +71,7 @@
     <view class="modal-content">
       <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
         <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="show" id="demo1" class="card modal-scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
-        <view class="card-collected">
+        <view class="card-info">
         <image class="icon-collected" src="/images/grey/upvote.png"/>
       {{pin.upvotes}}
         </view>
