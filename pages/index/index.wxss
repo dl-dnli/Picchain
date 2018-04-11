@@ -47,3 +47,13 @@
   height: 15px;
   width: 15px;
 }
+
+.add-venue {
+  width: 80rpx;
+  height: 80rpx;
+  float: right;
+  background-color: transparent;
+  position: fixed;
+  bottom: 20px;
+  right: 35px;  
+}

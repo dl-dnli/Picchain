@@ -1,0 +1,16 @@
+
+<view class="location-container">
+  <view class="picinput">
+    <input class="input" placeholder="Add a Name" placeholder-style="color: #8a8a8a"></input>
+  </view> 
+  <view class="picinput">
+    <input class="input" placeholder="Add a Description" placeholder-style="color: #8a8a8a"></input>
+  </view> 
+  <view class="picinput">
+    <input class="input" placeholder="Add a Prize" placeholder-style="color: #8a8a8a"></input>
+  </view> 
+  <view class="post-button">
+    <button class="pic-submit-button" plain="true">Submit</button>
+  </view>
+</view>
+

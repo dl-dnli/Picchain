@@ -1,6 +1,4 @@
-// pages/index/index.js
-const app = getApp()
-
+// pages/map/map.js
 Page({
 
   /**
@@ -14,36 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let page = this;
-    wx.request({
-      url: "http://picchain.herokuapp.com/api/v1/pins",
-      method: 'GET',
-      success(res) {
-        const pins = res.data.pins;
 
-        // Update local data
-        page.setData({
-          pins: pins
-        });
-
-        wx.hideToast();
-      }
-    });
-  },
-
-  showPin(e) {
-    const data = e.currentTarget.dataset;
-    const pin = data.pin;
-
-    wx.navigateTo({
-      url: "../show/show"
-    });
-  },
-
-  addLocation() {
-    wx.navigateTo({
-      url: "../location/location"
-    });
   },
 
   /**

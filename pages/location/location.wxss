@@ -1,26 +1,11 @@
-.camera-container {
+.location-container {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   padding: 50rpx 0;
   box-sizing: border-box;
-} 
-
-.photo-container {
-  height: 600rpx;
-  width: 600rpx;
-}
-
-.photo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.add-picture {
-  height: 100rpx;
-  width: 100rpx;
 }
 
 .input{
@@ -31,7 +16,7 @@
 .picinput{
     border-top: 0.5rpx solid #8a8a8a;
     border-bottom: 0.5rpx solid #8a8a8a;
-    margin: 10rpx;
+    margin: 40rpx;
     width: 100%;
     position: relative;
     background-color: #FFFFFF;
@@ -41,13 +26,9 @@
 }
 
 .pic-submit-button {
-  margin: 10rpx;
+  margin: 50rpx;
   padding: 5rpx;
   width: 200rpx;
   border-color: #8CC152; 
   color: #8CC152; 
-}
-
-.post-button {
-  margin: 30rpx;
 }

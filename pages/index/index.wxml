@@ -14,4 +14,7 @@
 </view>
 
 
+<view class="add-button">
+  <image class="add-venue" src="/images/green/add.png" bindtap="addLocation"/>
+</view>
 
