@@ -2,11 +2,12 @@
   "pages":[
     "pages/index/index",
     "pages/map/map",
-    "pages/camera/camera"
+    "pages/camera/camera",
+    "pages/show/show"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#FFF",
     "navigationBarTitleText": "PicChain",
     "navigationBarTextStyle":"black"
   },
