@@ -58,6 +58,9 @@
       {{pin.upvotes}}
         </view>
       </scroll-view>
+      <view class="quit-button">
+        <image class="quit" src="/images/grey/quit.png" bindtap="hide"/>
+      </view>
     </view>
   </view>
 </view>
