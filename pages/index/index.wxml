@@ -24,7 +24,7 @@
   </view>
   <view class="page-section-spacing">
     <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
-      <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="show" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
+      <view wx:for="{{pins_new}}" wx:for-item="pin" wx:key="pin.id" bindtap="onPinClicked" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
       <!-- <view id="demo1" class="scroll-view-item_H demo-text-1"></view> -->
       <!-- <view id="demo2"  class="scroll-view-item_H demo-text-2"></view>
       <view id="demo3" class="scroll-view-item_H demo-text-3"></view> -->
@@ -38,7 +38,7 @@
   </view>
   <view class="page-section-spacing">
     <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
-      <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="onPinClicked" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
+      <view wx:for="{{pins_popular}}" wx:for-item="pin" wx:key="pin.id" bindtap="onPinClicked" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
     </scroll-view>
   </view>
 </view>

@@ -1,8 +1,7 @@
 <view class="date">{{reviews.name}}</view>
 
 <view class="banner" style="background-image: url('{{pin.image}}');" />
-<view class="h5">{{pin.upvotes}}</view>
-<view class="h5">{{pin.location_id}}</view>
+<view>{{pin.upvotes}}</view>
 
 
 <view class="upv-tag">
