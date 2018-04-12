@@ -1,0 +1,71 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx7afe1abcdf810a16",
+	"projectname": "Picchain",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"pluginRoot": "",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "show",
+					"pathName": "pages/show/show",
+					"query": "id=1"
+				},
+				{
+					"id": -1,
+					"name": "camera",
+					"pathName": "pages/camera/camera",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "location",
+					"pathName": "pages/location/location",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "vshow",
+					"pathName": "pages/vshow/vshow",
+					"query": "id=1"
+				},
+				{
+					"id": 4,
+					"name": "vindex",
+					"pathName": "pages/vindex/vindex",
+					"query": ""
+				}
+			]
+		}
+	}
+}
