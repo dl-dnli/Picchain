@@ -16,9 +16,10 @@
         <view class="border" />
         </view>
         <view class="location">
-        {{location.longitude}}
+          {{location.longitude}}
         </view>
       </view>
+
 
   </view>
 </view>
