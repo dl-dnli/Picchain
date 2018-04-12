@@ -1,10 +1,15 @@
 let cos_utils = require('../../utils/cos')
 var config = require('../../config')
 let Key = ''
+let params;
 
 Page({
   data: {
     list: [],
+  },
+
+  onLoad: function (options) {
+    params = options;
   },
 
   simpleUpload: function () {
@@ -28,7 +33,25 @@ Page({
       },
     })
   },
-  logKey: function () {
-    console.log('https://picchain-1256466747.cos.ap-chengdu.myqcloud.com/' + Key)
+  postPic: function () {
+    const new_pin = {
+      image: 'https://picchain-1256466747.cos.ap-chengdu.myqcloud.com/' + Key,
+      user_id: params.user_id,
+      location_id: params.location_id
+    };
+    wx.request({
+      url: `http://picchain.herokuapp.com/api/v1/locations/${params.location_id}/pins`,
+      method: 'POST',
+      data: {
+        pin: new_pin
+      },
+      success: function (res) {
+        // set data on index page and show
+        console.log(res)
+        wx.redirectTo({
+          url: `../show/show?id=${res.data.id}`
+        });
+      }
+    });
   }
 });

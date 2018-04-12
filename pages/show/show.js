@@ -1,4 +1,5 @@
 // pages/show/show.js
+let pin;
 Page({
 
   /**
@@ -27,7 +28,7 @@ Page({
       url: `http://picchain.herokuapp.com/api/v1/pins/${options.id}`,
       method: 'GET',
       success(res) {
-        const pin = res.data;
+        pin = res.data;
 
         console.log(res.data)
 
@@ -67,7 +68,9 @@ Page({
                   code: code
                 },
                 success: function (res) {
-                  console.log(res);
+                  wx.redirectTo({
+                    url: `/pages/camera/camera?user_id=${res.data.id}&location_id=${pin.location_id}`
+                  });
                 }
               })
             }

@@ -12,7 +12,8 @@ Page({
     // }]
 
   },
-  onLoad: function (e) {
+  onLoad: function (options) {
+    console.log(options)
     const page = this
     wx.request({
       url: "http://picchain.herokuapp.com/api/v1/locations",

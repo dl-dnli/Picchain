@@ -1,4 +1,4 @@
-<view class="banner" style="background-image: url('	https://picchain-1256466747.cos.ap-chengdu.myqcloud.com/wx7afe1abcdf810a16.o6zAJs7ovmom9PKrewRghsdKs05o.ENKrqG7CyzAgb394ad64d91cb7b90d6818810e47cbd7.png');" />
+<view class="banner" style="background-image: url('{{pin.image}}')" />
 
 <view class="upv-tag">
 
