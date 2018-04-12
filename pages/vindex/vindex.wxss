@@ -6,59 +6,59 @@
 }
 
 .card {
-  height: 350px;
   width: 250px;
+  height: 300px;
   /*text-shadow: 0 1px 3px rgba(0,0,0,0.6);*/
   color: black;
   position: relative;
   margin: 5px;
-  box-shadow: 2px 0px 5px 0px rgba(219,219,219,0.43);
-  border-radius: 8px;
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: .3s ease;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,0.35);
 }
 
 .banner {
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center;
-  height: 35vh;
+  height: 200px;
   width: 100%;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
+.vcontent {
+  width: 230px;
+  height: 40px;
+  padding:  10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+}
 
-.location {
-  font-size: 14px;
-  text-transform: uppercase;
-  position: relative;
-  top:28px;
+.prize {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex: 0 0 150px;
 }
 
 .name {
-  font-size: 24px;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin: 0 80rpx;
+  padding: 20rpx 0;
+  border-bottom: 0.5rpx solid black;
   text-align: center;
   color: black;
 }
-.prize {
-  font-size: 14px;
-  word-wrap: break-word;
-}
 
-.card-container .card .vcontent {
-  max-width: 250px;
-  height: 100px;
-  padding:  13px;
-}
-
-.border {
-  border:0.2px solid #ededed;
-  width: 175px;
-  position: relative;
-  top: 14px;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.prize > image {
+  height: 50rpx;
+  flex: 0 0 50rpx;
+  margin-right: 20rpx;
 }
