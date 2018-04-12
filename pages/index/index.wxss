@@ -1,3 +1,8 @@
+.pin-title {
+  height: 70rpx;
+  width: 70rpx;
+}
+
 .weui-cells {
   position: relative;
   margin-top: 1.17647059em;
@@ -102,9 +107,22 @@
   right: 35px;  
 }
 
+.page-section {
+  margin-top: 40rpx;
+}
+
 .page-section-title {
-  margin: 20rpx;
+  margin: 20rpx 0 20rpx 0;
   font-size: 40rpx;
+  text-align: center;
+}
+
+.scroll-view_H {
+  margin-top: 20rpx;
+}
+
+.category {
+  padding-bottom: 20rpx;
 }
 
 .scroll-view_H{

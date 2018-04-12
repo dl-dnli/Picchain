@@ -20,7 +20,8 @@
 
 <view class="page-section">
   <view class="page-section-title">
-    <text>New</text>
+    <!-- <image class="pin-title" src="/images/green/add-new.png"></image> -->
+    <view class="category">New</view>
   </view>
   <view class="page-section-spacing">
     <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
@@ -34,7 +35,8 @@
 
 <view class="page-section">
   <view class="page-section-title">
-    <text>Popular</text>
+    <!-- <image class="pin-title" src="/images/green/star.png"></image> -->
+    <view class="category">Trending</view>
   </view>
   <view class="page-section-spacing">
     <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
