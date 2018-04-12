@@ -6,55 +6,47 @@
 
 
 <view class="upv-tag">
-  <view class="message" wx:for="{{reviews}}" wx:for-item="review" wx:key="review.id">
-    <view class="ico-uvn">
+
+
+      <view class="ico">
       <image src="/images/white/upvote.png" class="icon" />
-      <view class="h3">{{review.upvotes}}</view>
-      <image class="avatar-small" src="{{review.image}}" />
+      <view class="upvotes">200</view>
+      </view>
+
+    <view class="outline flex">
+      <image class="avatar-small" src="http://media.lehighvalleylive.com/entertainment-general_impact/photo/guy-fieri-cee642e1641d34c5.jpg" />
       <view class="author-name">
-        <view class="h3">{{review.name}}</view>
-        <view class="date">{{review.date}}</view>
+        <view class="h3">Gab</view>
+        <view class="date">July</view>
       </view>
-    </view>
-    <view class="h5">{{review.tags}}</view>
-  </view>
+      </view>
+
+    <view class="h5">lovely</view>
+
 </view>
-<view class="date">{{date}}</view>
-<view class="h5">{{tags}}</view>
 
-<view class="mid">
-  <view class="invisi-box">
-    <view class="message" wx:for="{{vendor}}" bindtap="showVendor" data-vendor="{{vendor}}" wx:for-item="v" >
-      <image class="avatar-large" src="{{v.image}}" />
-      <view class="message-name">
-        <view class="h3">{{v.name}}</view>
-      </view>
-  </view>
-  </view>
-  </view>
-  <view class="lowmid">
-  <view class="dec" wx:for="{{vendor}}" wx:for-item="v" wx:key="v.id">
-  <view class="h3">{{v.description}}</view>
-  <view class="h4">{{v.prize}}</view>
-  </view>
+<view class="card-container">
+    <view class="avaname">
+      <image class="avatar-large" src="http://businessupperhand.com/wp-content/uploads/2013/01/coffee-shop-1.jpg" />
+
+      <view class="name">Coffee Shop</view>
+    </view>
   </view>
 
-<view class="bot">
-  <view class="message" wx:for="{{reviews}}" wx:for-item="review" wx:key="review.id">
-    <view class="h5">{{review.location}}</view>
+  <view class="info-container">
+
+  <view class="prize">Free Coffee for the winner.</view>
+  </view>
+
+
+  <view class="bot">
+
+    <view class="address">hhhhHHHHHhhhhHHHHHhhhhHHHHHhhhhHHHHHhhhhHHHHHhhhhHHHHH</view>
     <view class="map-icon">
       <image src="/images/white/map2.png" class="icon" />
     </view>
   </view>
-</view>
 
 
-<view class="bot">
-  <view class="message" wx:for="{{vendors}}" wx:for-item="vendor" wx:key="review.id">
-    <view class="h5">{{vendor.description}}</view>
-    <view class="map-icon">
-      <image src="/images/white/map2.png" class="icon" />
-    </view>
-  </view>
-</view>
+
 <button bindtap="login">Submit Your Own Photo</button>

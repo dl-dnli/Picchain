@@ -29,14 +29,8 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
-				{
-					"id": 0,
-					"name": "show",
-					"pathName": "pages/show/show",
-					"query": "id=1"
-				},
 				{
 					"id": -1,
 					"name": "camera",
@@ -53,6 +47,12 @@
 					"id": -1,
 					"name": "vshow",
 					"pathName": "pages/vshow/vshow",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "camera",
+					"pathName": "pages/show/show",
 					"query": ""
 				}
 			]
