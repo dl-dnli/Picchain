@@ -1,5 +1,5 @@
 
-<view class="location-container">
+<!-- <view class="location-container">
   <view class="picinput">
     <input class="input" placeholder="Add a Name" placeholder-style="color: #8a8a8a"></input>
   </view> 
@@ -9,5 +9,21 @@
   <view class="post-button">
     <button class="pic-submit-button" plain="true">Submit</button>
   </view>
+</view> -->
+<view class="form-container">
+  <view class='login-form'>
+    <view class="flex-row">
+      <label class="lf--label" for="username">
+        <image class="add-name" src="/images/white/user.png"/>
+      </label>
+      <input id="username" class='lf--input' placeholder='Your Name' type='text'/>
+    </view>
+    <view class="flex-row">
+      <label class="lf--label" for="password">
+        <image class="add-name" src="/images/white/award.png"/> 
+      </label>
+      <input id="password" class='lf--input' placeholder='Add a prize' type='password'/>
+    </view>
+    <input class='lf--submit' type='submit' value='SUBMIT'/>
+  </view>
 </view>
-

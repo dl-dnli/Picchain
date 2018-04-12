@@ -10,7 +10,7 @@
 
       <view class="vcontent">
         <view class="prize">
-         <image class="prize" src='/images/orange/award.svg' /> 
+         <image class="prize" src='/images/orange/award.png' /> 
          <view class="prize_text">{{location.prize}}</view>
         </view>
         <view class="count">
