@@ -74,11 +74,19 @@ Page({
               var province = userInfo.province
               var city = userInfo.city
               var country = userInfo.country
+              const user = {
+                name: nickName,
+                avatar: avatarUrl
+              }
               wx.request({
                 url: 'http://picchain.herokuapp.com/api/v1/users',
                 method: 'POST',
                 data: {
+                  user: user,
                   code: code
+                },
+                success: function (res) {
+                  console.log(res);
                 }
               })
             }
