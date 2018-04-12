@@ -1,6 +1,6 @@
 <!--pages/vindex/vindex.wxml-->
 <view class="card-container">
-  <view wx:for="{{locations}}" wx:for-item="location" wx:key="location.id" bindtap="onPinClicked"  class="card" data-pin="{{location}}">
+  <view wx:for="{{locations}}" wx:for-item="location" wx:key="location.id" bindtap="onLocationClicked"  class="card" data-location="{{location}}">
 
 <view class="banner" style="background-image: url('https://cdn.shopify.com/s/files/1/0415/9941/files/omoi-zakka-shop-feb28-2017-6_1800x.jpg?v=1488395852');" />
       <view class="card-category">

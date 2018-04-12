@@ -7,7 +7,6 @@ Page({
   data: {
   
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -32,10 +31,10 @@ Page({
 
   onLocationClicked(e) {
     const data = e.currentTarget.dataset;
-    const pin = data.pin;
+    const location = data.location;
 
     wx.navigateTo({
-      url: `../show/show?id=${pin.id}`
+      url: `../vshow/vshow?id=${location.id}`
     });
   }, 
 
