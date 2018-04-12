@@ -57,3 +57,4 @@
     </view>
   </view>
 </view>
+<button bindtap="login">Submit Your Own Photo</button>
