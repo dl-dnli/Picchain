@@ -29,13 +29,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 0,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "show",
 					"pathName": "pages/show/show",
-					"query": ""
+					"query": "id=1"
 				},
 				{
 					"id": -1,
