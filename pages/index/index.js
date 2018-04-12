@@ -15,9 +15,7 @@ Page({
   },
 
   show: function () {
-
     this.setData({ flag: false })
-
   },
 
   hide: function () {
@@ -35,11 +33,13 @@ Page({
       url: "http://picchain.herokuapp.com/api/v1/pins",
       method: 'GET',
       success(res) {
-        const pins = res.data.pins;
+        const pins_popular = res.data.pins_by_upvotes;
+        const pins_new = res.data.pins_by_date;
 
         // Update local data
         page.setData({
-          pins: pins
+          pins_new: pins_new,
+          pins_popular: pins_popular
         });
 
         wx.hideToast();
