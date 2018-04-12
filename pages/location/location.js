@@ -1,58 +1,20 @@
-// pages/index/index.js
-const app = getApp()
-var order = ['demo1', 'demo2', 'demo3']
-
+// pages/map/map.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    scrollTop: 100,
-    scrollLeft: 0,
-    flag: true
-  },
-
-  show: function () {
-
-    this.setData({ flag: false })
 
   },
 
-  hide: function () {
-
-    this.setData({ flag: true })
-
-  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let page = this;
-    wx.request({
-      url: "http://picchain.herokuapp.com/api/v1/pins",
-      method: 'GET',
-      success(res) {
-        const pins = res.data.pins;
 
-        // Update local data
-        page.setData({
-          pins: pins
-        });
-
-        wx.hideToast();
-      }
-    });
   },
 
-  onPinClicked(e) {
-    const data = e.currentTarget.dataset;
-    const pin = data.pin;
-
-    wx.navigateTo({
-      url: `../show/show?id=${pin.id}`
-    });
-  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

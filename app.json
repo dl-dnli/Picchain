@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/map/map",
     "pages/camera/camera",
-    "pages/show/show"
+    "pages/show/show",
+    "pages/location/location"
   ],
   "window":{
     "backgroundTextStyle":"light",

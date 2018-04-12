@@ -1,2 +1,19 @@
-<!--pages/camera/camera.wxml-->
-<text>pages/camera/camera.wxml</text>
+<view class="camera-container">
+  <!-- <image class="add-picture" src="/images/grey/add.png" bindtap="chooseimage"></image>  -->
+  <view class="photo-container" bindtap="chooseimage">
+  <image src="{{tempFilePaths }}" mode="aspecFill"/>
+  </view>
+   <view class="picinput">
+    <input class="input" placeholder="Add a description" placeholder-style="color: #8a8a8a"></input>
+  </view> 
+
+  <!-- <view class="picinput">
+    <input class="input" placeholder="Add location" placeholder-style="color: #8a8a8a"></input></view> -->
+  <view class="post-button">
+    <button class="pic-submit-button" plain="true" >Post</button>
+    <!-- bindtap="chooseimage" -->
+  </view>
+</view>
+
+<!-- style="width: 100%; height: 650rpx"  -->
+<!-- bindtap="uploadImage" -->

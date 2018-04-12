@@ -11,7 +11,71 @@
       <view class="p">{{pin.tags}}</view>
     </view>
   </view>
+</view> -->
+
+
+
+
+<!-- <view class="scroll_box">
+  <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+    <view class="item_list" wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id">
+      <image src='{{pin.image}}' class="item_book_img" mode="aspectFill" bindtap="showPin" data-pin="{{pin}}"></image>
+      <view class="item_book_text"><image class="icon-collected" src="/images/grey/upvote.png">
+    </image>
+  {{pin.upvotes}}</view>
+    </view>
+
+  </scroll-view>
+  </view> -->
+
+<view class="page-section">
+  <view class="page-section-title">
+    <text>New</text>
+  </view>
+  <view class="page-section-spacing">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+      <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="show" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
+      <!-- <view id="demo1" class="scroll-view-item_H demo-text-1"></view> -->
+      <!-- <view id="demo2"  class="scroll-view-item_H demo-text-2"></view>
+      <view id="demo3" class="scroll-view-item_H demo-text-3"></view> -->
+    </scroll-view>
+  </view>
 </view>
 
+<view class="page-section">
+  <view class="page-section-title">
+    <text>Popular</text>
+  </view>
+  <view class="page-section-spacing">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+      <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="show" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
+    </scroll-view>
+  </view>
+</view>
 
+<!-- <view class="add-button">
+  <image class="add-venue" src="/images/green/add.png" bindtap="addLocation"/>
+</view> -->
+<!--
+<view class="container">
+  <view class="page-body">
+    <view class="btn-area">
+      <button type="default" bindtap="modalTap">有标题的modal</button>
+    </view>
+  </view>
 
+</view> -->
+
+<view class="modal-box" hidden="{{flag}}" bindtap="hide">
+  <view class="modal-body">
+    <view class="modal-content">
+      <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+        <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="show" id="demo1" class="card modal-scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
+        <view class="card-info">
+        <image class="icon-collected" src="/images/grey/upvote.png"/>
+      {{pin.upvotes}}
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>
