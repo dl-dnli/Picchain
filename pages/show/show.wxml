@@ -1,10 +1,15 @@
+<view class="date">{{reviews.name}}</view>
+
 <view class="banner" style="background-image: url('{{pin.image}}');" />
+<view class="h5">{{pin.upvotes}}</view>
+<view class="h5">{{pin.location_id}}</view>
+
 
 <view class="upv-tag">
   <view class="message" wx:for="{{reviews}}" wx:for-item="review" wx:key="review.id">
     <view class="ico-uvn">
-      <image src="/images/grey/upvote.png" class="icon" />
-      <view class="h5">{{review.upvotes}}</view>
+      <image src="/images/white/upvote.png" class="icon" />
+      <view class="h3">{{review.upvotes}}</view>
       <image class="avatar-small" src="{{review.image}}" />
       <view class="author-name">
         <view class="h3">{{review.name}}</view>
@@ -14,6 +19,8 @@
     <view class="h5">{{review.tags}}</view>
   </view>
 </view>
+<view class="date">{{date}}</view>
+<view class="h5">{{tags}}</view>
 
 <view class="mid">
   <view class="invisi-box">

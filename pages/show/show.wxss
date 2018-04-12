@@ -32,8 +32,8 @@ border-radius:50px;
 }
 
 .upv-tag .message .icon {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .upv-tag .message .ico-uvn {
