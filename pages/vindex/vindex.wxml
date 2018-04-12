@@ -2,7 +2,7 @@
 <view class="card-container">
   <view wx:for="{{locations}}" wx:for-item="location" wx:key="location.id" bindtap="onPinClicked"  class="card" data-pin="{{location}}">
 
-  <image class="banner" style="background-image: url('http://www.esherconstruction.co.uk/wp-content/uploads/Sandwich-Shop.jpg');" />
+  <image class="banner" style="background-image: url('{{location.photo}}');" />
 
       <view class="name">
         {{location.name}}
