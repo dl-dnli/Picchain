@@ -14,7 +14,7 @@
          <view class="prize_text">{{location.prize}}</view>
         </view>
         <view class="count">
-          Photos: 0
+          Photos: {{location.pins_count}}
         </view>
       </view>
 

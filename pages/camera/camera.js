@@ -26,7 +26,15 @@ Page({
           onProgress: function (info) {
             console.log(JSON.stringify(info));
           }
-        }, cos_utils.requestCallback);
+        }, 
+        cos_utils.requestCallback);
+        cos.getObject({
+          Bucket: 'test-1250000000', /* 必须 */
+          Region: 'ap-guangzhou',    /* 必须 */
+          Key: '1.jpg',              /* 必须 */
+        }, function (err, data) {
+          console.log(err || data.Body);
+        });
       }
     })
   }

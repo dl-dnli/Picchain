@@ -1,7 +1,7 @@
 <view class="date">{{reviews.name}}</view>
 
 <view class="banner" style="background-image: url('{{pin.image}}');" />
-<view>{{pin.upvotes}}</view>
+<view></view>
 
 
 <view class="upv-tag">
@@ -9,7 +9,7 @@
 
       <view class="ico">
       <image src="/images/white/upvote.png" class="icon" />
-      <view class="upvotes">200</view>
+      <view class="upvotes">{{pin.upvotes}}</view>
       </view>
 
     <view class="outline flex">
