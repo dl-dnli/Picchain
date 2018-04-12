@@ -10,7 +10,8 @@ Page({
   data: {
     scrollTop: 100,
     scrollLeft: 0,
-    flag: true
+    flag: true,
+    hasLocation: false,
   },
 
   show: function () {
@@ -24,6 +25,7 @@ Page({
     this.setData({ flag: true })
 
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
