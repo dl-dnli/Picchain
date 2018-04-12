@@ -50,9 +50,15 @@
 					"query": ""
 				},
 				{
-					"id": -1,
+					"id": 3,
 					"name": "vshow",
 					"pathName": "pages/vshow/vshow",
+					"query": "id=1"
+				},
+				{
+					"id": 4,
+					"name": "vindex",
+					"pathName": "pages/vindex/vindex",
 					"query": ""
 				}
 			]
