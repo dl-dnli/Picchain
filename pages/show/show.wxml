@@ -1,4 +1,4 @@
-<view class="banner" style="background-image: url('{{pin.image}}');" />
+<view class="banner" style="background-image: url('{{pin.image}}')" />
 
 <view class="upv-tag">
 

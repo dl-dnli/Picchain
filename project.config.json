@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
@@ -69,6 +69,12 @@
 					"id": -1,
 					"name": "location",
 					"pathName": "pages/location/location",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Map",
+					"pathName": "pages/map/map",
 					"query": ""
 				}
 			]

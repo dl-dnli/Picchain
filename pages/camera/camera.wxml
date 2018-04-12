@@ -23,7 +23,7 @@
         </view>
       </view>
       <view class="btn-area">
-        <button type="primary">POST</button>
+        <button type="primary" bindtap='postPic'>POST</button>
       </view>
     </view>
   </view>
