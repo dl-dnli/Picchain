@@ -5,7 +5,8 @@
     "pages/camera/camera",
     "pages/show/show",
     "pages/vindex/vindex",
-    "pages/vshow/vshow"
+    "pages/vshow/vshow",
+    "pages/location/location"
   ],
   "window":{
     "backgroundTextStyle":"light",
