@@ -6,12 +6,10 @@
 }
 
 .card {
-  display: flex;
-  justify-content: center;
-  height: 350px;
+  height: 325px;
   width: 250px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  color: white;
+  /*text-shadow: 0 1px 3px rgba(0,0,0,0.6);*/
+  color: black;
   position: relative;
   margin: 5px;
   box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.75);
@@ -19,36 +17,47 @@
 }
 
 .banner {
-  height: 20vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center;
+  height: 35vh;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-.card-user {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 40px;
-  border-radius: 50%;
-}
-.card-category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
-  text-transform: uppercase;
-}
-.card-description {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-.card-description .name {
-  font-size: 24px;
-}
-.card-description .tag {
+
+.location {
   font-size: 14px;
-  opacity: 0.7;
-  font-weight: lighter;
+  text-transform: uppercase;
+  position: relative;
+  top:20px;
+}
+
+.name {
+  font-size: 24px;
+  text-align: center;
+  color: black;
+}
+.prize {
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.card-container .card .vcontent {
+  max-width: 250px;
+  height: 100px;
+  padding:  13px;
+}
+
+.border {
+  border:0.2px solid #ededed;
+  width: 175px;
+  position: relative;
+  top: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
 }
