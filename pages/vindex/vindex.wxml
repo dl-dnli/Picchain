@@ -10,13 +10,11 @@
 
       <view class="vcontent">
         <view class="prize">
-         {{location.name}}
+         <image class="prize" src='/images/orange/award.svg' /> 
+         <view class="prize_text">{{location.prize}}</view>
         </view>
-        <view class="flex">
-        <view class="border" />
-        </view>
-        <view class="location">
-          {{location.longitude}}
+        <view class="count">
+          Photos: 0
         </view>
       </view>
 
