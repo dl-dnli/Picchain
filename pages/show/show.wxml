@@ -24,7 +24,7 @@
 
 <view class="mid">
   <view class="invisi-box">
-    <view class="message" wx:for="{{vendor}}" wx:for-item="v" wx:key="v.id">
+    <view class="message" wx:for="{{vendor}}" bindtap="showVendor" data-vendor="{{vendor}}" wx:for-item="v" >
       <image class="avatar-large" src="{{v.image}}" />
       <view class="message-name">
         <view class="h3">{{v.name}}</view>

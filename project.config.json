@@ -48,6 +48,12 @@
 					"name": "location",
 					"pathName": "pages/location/location",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "vshow",
+					"pathName": "pages/vshow/vshow",
+					"query": ""
 				}
 			]
 		}

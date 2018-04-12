@@ -28,6 +28,14 @@ Page({
     ]
   },
 
+  showVendor(e) {
+    const data = e.currentTarget.dataset;
+    const vendor = data.vendor;
+
+    wx.navigateTo({
+      url: `../vshow/vshow?id=${vendor.id}`
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */
