@@ -11,6 +11,11 @@
 	"libVersion": "1.9.94",
 	"appid": "wx7afe1abcdf810a16",
 	"projectname": "Picchain",
+	"svr": "",
+	"client": "",
+	"qcloudRoot": "",
+	"miniprogramRoot": "",
+	"pluginRoot": "",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -25,15 +30,10 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
-			"current": 1,
-=======
-			"current": -1,
->>>>>>> f4e233aeb646754872a893986b642bb277919c3b
+			"current": 4,
 			"list": [
 				{
 					"id": 0,
