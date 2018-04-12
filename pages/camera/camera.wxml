@@ -1,6 +1,6 @@
 <view class="camera-container">
   <!-- <image class="add-picture" src="/images/grey/add.png" bindtap="chooseimage"></image>  -->
-  <view class="photo-container" bindtap="chooseimage">
+  <view class="photo-container" bindtap="chooseImage">
   <image src="{{tempFilePaths }}" mode="aspecFill"/>
   </view>
    <view class="picinput">
@@ -10,7 +10,7 @@
   <!-- <view class="picinput">
     <input class="input" placeholder="Add location" placeholder-style="color: #8a8a8a"></input></view> -->
   <view class="post-button">
-    <button class="pic-submit-button" plain="true" >Post</button>
+    <button class="pic-submit-button" bindtap="simpleUpload" plain="true" >Post</button>
     <!-- bindtap="chooseimage" -->
   </view>
 </view>
