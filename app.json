@@ -4,7 +4,7 @@
     "pages/map/map",
     "pages/camera/camera",
     "pages/show/show",
-    "pages/location/location"
+    "pages/vindex/vindex"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -31,7 +31,7 @@
         "text": ""
       },
       {
-        "pagePath": "pages/camera/camera",
+        "pagePath": "pages/vindex/vindex",
         "iconPath": "images/green/camera.png",
         "selectedIconPath": "images/grey/camera.png",
         "text": ""
