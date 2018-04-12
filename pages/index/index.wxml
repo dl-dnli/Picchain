@@ -10,13 +10,21 @@
   </scroll-view>
   </view> -->
 
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__bd">
+      <input class="weui-input" name="input" bindtap="chooseLocation" placeholder="Search" />
+    </view>
+  </view>
+</view>
+
 <view class="page-section">
   <view class="page-section-title">
     <text>New</text>
   </view>
   <view class="page-section-spacing">
     <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
-      <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="onPinClicked" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
+      <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="show" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
       <!-- <view id="demo1" class="scroll-view-item_H demo-text-1"></view> -->
       <!-- <view id="demo2"  class="scroll-view-item_H demo-text-2"></view>
       <view id="demo3" class="scroll-view-item_H demo-text-3"></view> -->
@@ -52,11 +60,10 @@
   <view class="modal-body">
     <view class="modal-content">
       <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+       <view class="pin-card">
         <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="show" id="demo1" class="card modal-scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
-        <view class="card-info">
-        <image class="icon-collected" src="/images/grey/upvote.png"/>
-      {{pin.upvotes}}
-        </view>
+        <view class="card-info"></view>
+      </view> 
       </scroll-view>
       <view class="quit-button">
         <image class="quit" src="/images/grey/quit.png" bindtap="hide"/>
@@ -64,3 +71,24 @@
     </view>
   </view>
 </view>
+
+
+
+        <!-- <view wx:for="{{pins}}" wx:for-item="pin" wx:key="pin.id" data-pin="{{pin}}">
+          <view class="pin-card">
+            <view id="demo1" class="pin-card-image modal-scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');"></view>
+            <view class="pin-card-content">
+              <view class="pin-info" wx:for="{{reviews}}" wx:for-item="review" wx:key="review.id">
+                <image class="avatar-small" src="{{review.image}}" />
+                <view class="author-name">{{review.name}}</view>
+                <view class="map-icon">
+                  <image src="/images/white/map2.png" class="icon" />
+                </view>
+                <view class="pin-location">{{review.location}}</view>
+                <!-- <image class="icon-collected" src="/images/grey/upvote.png"/>
+                <view class="h3">{{review.upvotes}}</view> -->
+              <!-- </view>
+            </view>
+          </view>
+        </view>
+         --> 

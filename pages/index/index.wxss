@@ -1,3 +1,46 @@
+.weui-cells {
+  position: relative;
+  margin-top: 1.17647059em;
+  background-color: #FFFFFF;
+  line-height: 1.41176471;
+  font-size: 35rpx;
+}
+
+.weui-cell {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.weui-cells_after-title {
+  margin-top: 0;
+}
+
+.weui-cell_input {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: gainsboro;
+}
+
+.weui-input {
+  height: 2em;
+  min-height: 2em;
+  line-height: 2em;
+  background-color: white;  
+  border-radius: 10rpx;
+  padding: 10rpx 10rpx 10rpx 30rpx;
+}
+.weui-cell__bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  margin: 20rpx;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -80,7 +123,7 @@
 
 .modal-scroll-view-item_H {
   display: inline-block;
-  width: 90%;
+  width: 100%;
   height: 900rpx;
   background-size: cover;
   margin-left: 40rpx;
@@ -120,11 +163,11 @@
   /* width: 60%; */
   /* margin:0 10% 0 30%; */
   overflow: hidden;
-  border-radius: 10rpx;}
+  }
 
 .modal-content{
-  width: 100%;
-  height: 800px; 
+  width: 95%;
+  height: 500px; 
 }
 
 .quit {
@@ -134,3 +177,4 @@
   left: 335rpx;
   bottom: 30rpx;
 }
+
