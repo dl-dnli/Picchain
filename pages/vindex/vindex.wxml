@@ -1,6 +1,6 @@
 <!--pages/vindex/vindex.wxml-->
 <view class="card-container">
-  <view wx:for="{{locations}}" wx:for-item="location" wx:key="location.id" bindtap="onPinClicked"  class="card" data-pin="{{location}}">
+  <view wx:for="{{locations}}" wx:for-item="location" wx:key="location.id" bindtap="onLocationClicked"  class="card" data-location="{{location}}">
 
   <image class="banner" style="background-image: url('{{location.photo}}');" />
 
