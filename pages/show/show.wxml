@@ -1,8 +1,4 @@
-<view class="date">{{reviews.name}}</view>
-
 <view class="banner" style="background-image: url('{{pin.image}}');" />
-<view></view>
-
 
 <view class="upv-tag">
 
@@ -15,12 +11,9 @@
     <view class="outline flex">
       <image class="avatar-small" src="http://media.lehighvalleylive.com/entertainment-general_impact/photo/guy-fieri-cee642e1641d34c5.jpg" />
       <view class="author-name">
-        <view class="h3">Gab</view>
-        <view class="date">July</view>
+        <view class="h3">{{pin.user}}</view>
       </view>
-      </view>
-
-    <view class="h5">lovely</view>
+    </view>
 
 </view>
 
@@ -28,19 +21,19 @@
     <view class="avaname">
       <image class="avatar-large" src="http://businessupperhand.com/wp-content/uploads/2013/01/coffee-shop-1.jpg" />
 
-      <view class="name">Coffee Shop</view>
+      <view class="name">{{location.name}}</view>
     </view>
   </view>
 
   <view class="info-container">
 
-  <view class="prize">Free Coffee for the winner.</view>
+  <view class="prize">{{location.prize}}</view>
   </view>
 
 
-  <view class="bot">
+  <view class="bot" bindtap="onMapBuClicked">
 
-    <view class="address">hhhhHHHHHhhhhHHHHHhhhhHHHHHhhhhHHHHHhhhhHHHHHhhhhHHHHH</view>
+    <view class="address">{{location.address}}</view>
     <view class="map-icon">
       <image src="/images/white/map2.png" class="icon" />
     </view>
