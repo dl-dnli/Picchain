@@ -5,7 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    scrollTop: 100,
+    scrollLeft: 0,
+    flag: true,
+    hasLocation: false,
+  },
+
+  show: function () {
+    this.setData({ flag: false })
+  },
+
+  hide: function () {
+
+    this.setData({ flag: true })
+
   },
 
   /**

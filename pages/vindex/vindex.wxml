@@ -13,11 +13,11 @@
          <image class="prize" src='/images/orange/award.png' /> 
          <view class="prize_text">{{location.prize}}</view>
         </view>
-        <view class="count">
-          Photos: {{location.pins_count}}
+        <view class="prize">
+         <image class="photo-count" src='/images/orange/photo.png' /> 
+         <view class="prize_text">{{location.pins_count}}</view>
         </view>
       </view>
-
-
   </view>
 </view>
+
