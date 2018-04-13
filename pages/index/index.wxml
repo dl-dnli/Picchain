@@ -17,7 +17,7 @@
     </view>
   </view>
 </view> -->
-<view class="touser">
+<view class="touser" bindtap="onUserButtonClicked">
   <image src="/images/white/user.png" class="icon" />
 </view>
 

@@ -55,6 +55,15 @@ Page({
       url: `../show/show?id=${pin.id}`
     });
   },
+
+  onUserButtonClicked(e) {
+    const data = e.currentTarget.dataset;
+    const user = data.user;
+
+    wx.navigateTo({
+      url: `../undex/undex?id=${user.id}`
+    });
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
