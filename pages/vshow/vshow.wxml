@@ -1,7 +1,7 @@
 <view class="card-container">
   <view class="card" data-location="{{location}}">
 
-  <image class="banner" style="background-image: url('{{location.top_pin.image}}');" />
+  <image class="banner" style="background-image: url('{{location.photo}}');" />
 
       <view class="name">
         {{location.name}}
@@ -21,12 +21,9 @@
 </view>
 
 <view class="page-section">
-  <view class="page-section-title">
-    <view class="category">New</view>
-  </view>
   <view class="page-section-spacing">
     <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
-      <view wx:for="{{pins_new}}" wx:for-item="pin" wx:key="pin.id" bindtap="onPinClicked" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
+      <view wx:for="{{location.pins_of_location}}" wx:for-item="pins_of_location" wx:key="pins_of_location.id" bindtap="onPinClicked" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pins_of_location.image}}');" data-pin="{{pins_of_location}}"></view>
     </scroll-view>
   </view>
 </view>
