@@ -11,7 +11,7 @@
     <view class="outline flex">
       <image class="avatar-small" src="http://media.lehighvalleylive.com/entertainment-general_impact/photo/guy-fieri-cee642e1641d34c5.jpg" />
       <view class="author-name">
-        <view class="h3">{{pin.user}}</view>
+        <view class="h3">{{pin.user_name}}</view>
       </view>
     </view>
 
@@ -21,7 +21,7 @@
     <view class="avaname">
       <image class="avatar-large" src="http://businessupperhand.com/wp-content/uploads/2013/01/coffee-shop-1.jpg" />
 
-      <view class="name">{{location.name}}</view>
+      <view class="name">{{pin.location_name}}</view>
     </view>
   </view>
 
