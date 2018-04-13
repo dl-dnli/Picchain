@@ -39,5 +39,5 @@
     </view>
   </view>
 <view class="flex">
-<button bindtap="login">Submit Your Photo</button>
+<button bindtap="login" >Submit Your Photo</button>
 </view>
