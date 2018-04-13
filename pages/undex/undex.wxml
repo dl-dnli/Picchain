@@ -5,6 +5,7 @@
       <view class="author2">
         <view>Gab</view>
       </view>
+      <button bindtap='addLocation'>Add Location</button>
     </view>
   </view>
 
