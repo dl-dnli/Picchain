@@ -73,7 +73,8 @@
 
 .scroll-view_H {
   margin-top: 40rpx;
-  margin-left: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
 }
 
 .scroll-view_H{

@@ -47,6 +47,7 @@ page {
 
 .form-title {
   margin-left: 30rpx;
+  font-family: 'Titillium';
 }
 
 .camera {
@@ -78,6 +79,7 @@ page {
     font-weight: 600;
     text-shadow: 0 1px 0 rgba(black, .2);
     border-radius: 5rpx;
+    font-family: 'Titillium';
     /* &:focus {
       outline: none;
       transition: transform .15s ease;
@@ -98,6 +100,7 @@ page {
     text-shadow: 0 1px 0 rgba(black, .2);
     border-radius: 5rpx;
     border: 1rpx solid #8CC152 !important; 
+    font-family: 'Titillium';
     
     /* &:focus {
       outline: none;

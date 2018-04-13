@@ -7,7 +7,7 @@
 
 .card {
   width: 250px;
-  height: 300px;
+  height: 320px;
   /*text-shadow: 0 1px 3px rgba(0,0,0,0.6);*/
   color: black;
   position: relative;
@@ -40,11 +40,10 @@
 }
 
 .prize {
-  width: 30%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 150px;
   margin-right: 0;
 }
 
