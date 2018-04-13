@@ -78,14 +78,15 @@ page {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: #8CC152;
 }
 .form-container {
-  width: 250px;
-  height: 300px;
+  width: 700rpx;
+  height: 850rpx;
   position: relative;
   margin: 5px;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 5rpx;
   box-sizing: border-box;
   transition: .3s ease;
   box-shadow: 0 3px 10px -2px rgba(0,0,0,0.35);
@@ -97,6 +98,7 @@ page {
 .login-form {
   width: 100%;
   position: relative;
+  border-radius: 5rpx;
   background: rgba(black, .15);
   
   /* &:before {
@@ -118,9 +120,26 @@ page {
   }
 } */
 
+  .title-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8CC152;
+    font-size: 40rpx;
+    width: 100%;
+    margin-top: 70rpx;
+  }
+
   .flex-row {
     display: flex;
     margin-bottom: 1em;
+    border: 1px solid #FCBB42;
+    margin: 70rpx;
+    border-radius: 5rpx;
+  }
+
+  .form-title {
+    margin-left: 30rpx;
   }
   
   .lf--label {
@@ -138,6 +157,7 @@ page {
     border: 0;
     color: #8f8f8f;
     font-size: 1rem;
+    
 
     /* &:focus {
       outline: none;
@@ -160,7 +180,7 @@ page {
     font-weight: 600;
     text-shadow: 0 1px 0 rgba(black, .2);
     margin-top: 60rpx;
-    border-radius: 10rpx;
+    border-radius: 5rpx;
     /* &:focus {
       outline: none;
       transition: transform .15s ease;
@@ -173,4 +193,9 @@ page {
 .add-name {
   height: 40rpx;
   width: 40rpx;
+}
+
+.speaker {
+  height: 80rpx;
+  width: 80rpx;
 }

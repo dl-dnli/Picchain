@@ -40,11 +40,12 @@
 }
 
 .prize {
-  width: 80%;
+  width: 30%;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   flex: 0 0 150px;
+  margin-right: 0;
 }
 
 .name {
@@ -62,3 +63,4 @@
   flex: 0 0 50rpx;
   margin-right: 20rpx;
 }
+

@@ -12,11 +12,15 @@
 </view> -->
 <view class="form-container">
   <view class='login-form'>
+    <view class="title-row">
+      <image class="speaker" src="/images/green/speaker.png"/>
+      <view class="form-title">Shout Out Your Place!</view>
+    </view>
     <view class="flex-row">
       <label class="lf--label" for="username">
         <image class="add-name" src="/images/white/user.png"/>
       </label>
-      <input id="username" class='lf--input' placeholder='Your Name' type='text'/>
+      <input id="username" class='lf--input' placeholder='Place Name' type='text'/>
     </view>
     <view class="flex-row">
       <label class="lf--label" for="password">
