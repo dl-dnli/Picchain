@@ -29,15 +29,15 @@ Page({
           user_id: user_id,
         }
         wx.request({
-          url: `http://localhost:3000/api/v1/users/${user_id}/locations`,
+          url: `http://picchain.herokuapp.com/api/v1/users/${user_id}/locations`,
           method: 'POST',
           data: {
             location: location
           },
-          success() {
+          success(res) {
             // set data on index page and show
-            wx.redirectTo({
-              url: '/pages/index/index'
+            wx.switchTab({
+              url: `../vindex/vindex`
             });
           }
         });
