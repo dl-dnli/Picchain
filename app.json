@@ -6,7 +6,8 @@
     "pages/show/show",
     "pages/vindex/vindex",
     "pages/vshow/vshow",
-    "pages/location/location"
+    "pages/location/location",
+    "pages/undex/undex"
   ],
   "window":{
     "backgroundTextStyle":"light",
