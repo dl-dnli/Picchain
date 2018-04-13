@@ -21,6 +21,15 @@ page {
   overflow-x: hidden;
 }
 
+.title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8CC152;
+  font-size: 40rpx;
+  margin: 90rpx;
+}
+
 .page-body-info {
   display: flex;
   box-sizing: border-box;
@@ -36,12 +45,66 @@ page {
   margin-bottom: 60rpx;
 }
 
+.form-title {
+  margin-left: 30rpx;
+}
+
+.camera {
+  height: 80rpx;
+  width: 80rpx;
+}
+
 .btn-area{
-  margin-top: 60rpx;
+  margin-top: 100rpx;
   box-sizing: border-box;
   width: 100%;
   padding: 0 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+  .lf--submit {
+    display: block;
+    text-align: center;
+    width: 250rpx;
+    margin-left: 20rpx;
+    padding: 30rpx;
+    background-color: #8CC152;
+    border: 0 !important;
+    color: white;
+    cursor: pointer;
+    font-size: 32rpx;
+    font-weight: 600;
+    text-shadow: 0 1px 0 rgba(black, .2);
+    border-radius: 5rpx;
+    /* &:focus {
+      outline: none;
+      transition: transform .15s ease;
+      transform: scale(1.1);
+    } */
+  }
+
+   .lf--cancel {
+    display: block;
+    text-align: center;
+    width: 250rpx;
+    padding: 28rpx;
+    background-color: white;
+    color: #8CC152;
+    cursor: pointer;
+    font-size: 32rpx;
+    font-weight: 600;
+    text-shadow: 0 1px 0 rgba(black, .2);
+    border-radius: 5rpx;
+    border: 1rpx solid #8CC152 !important; 
+    
+    /* &:focus {
+      outline: none;
+      transition: transform .15s ease;
+      transform: scale(1.1);
+    } */
+  }
 
 .image {
   width: 100%;

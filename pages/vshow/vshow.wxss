@@ -7,8 +7,8 @@
 }
 
 .card {
-  width: 250px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   /*text-shadow: 0 1px 3px rgba(0,0,0,0.6);*/
   color: black;
   position: relative;
@@ -24,7 +24,7 @@
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   background-position: center;
-  height: 200px;
+  height: 230px;
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -33,19 +33,20 @@
 .vcontent {
   width: 230px;
   height: 40px;
-  padding:  10px;
+  padding: 60rpx;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 30rpx;
+  margin-left: 50rpx;
 }
 
 .prize {
-  width: 30%;
+  width: 230rpx;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 150px;
+  /* flex: 0 0 150px; */
   margin-right: 0;
 }
 
@@ -67,6 +68,7 @@
 
 .page-section {
   margin-top: 0;
+  padding: 20rpx;
 }
 
 .scroll-view_H {
