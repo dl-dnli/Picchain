@@ -7,6 +7,7 @@
     "pages/vindex/vindex",
     "pages/vshow/vshow",
     "pages/location/location",
+    "pages/pinmap/pinmap",
     "pages/undex/undex"
   ],
   "window":{

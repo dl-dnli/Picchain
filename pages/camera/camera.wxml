@@ -14,17 +14,23 @@
   <!-- </view> -->
 
 
-<view class="camera-container">
-  <view class="page-body">
+<view class="page-body">
     <view class="page-section">
-      <view class="page-body-info">
-        <view class="photo-container" bindtap="simpleUpload">
-          <image src="{{tempFilePaths }}" mode="aspecFill"/>
+        <view class="page-body-info">
+          <block wx:if="{{filePath != ''}}">
+            <image src="{{filePath}}" class="image" mode="aspectFit"></image>
+          </block>
+          <block wx:if="{{filePath === ''}}">
+            <view class="image-plus image-plus-nb" bindtap="simpleUpload">
+              <view class="image-plus-horizontal"></view>
+              <view class="image-plus-vertical"></view>
+            </view>
+          </block>
         </view>
-      </view>
       <view class="btn-area">
         <button type="primary" bindtap='postPic'>POST</button>
       </view>
     </view>
   </view>
-</view>
+
+  

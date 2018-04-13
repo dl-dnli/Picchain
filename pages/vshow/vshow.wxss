@@ -1,1 +1,66 @@
-/* pages/vshow/vshow.wxss */
+/* pages/vindex/vindex.wxss */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  /*text-shadow: 0 1px 3px rgba(0,0,0,0.6);*/
+  color: black;
+  position: relative;
+  margin: 5px;
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: .3s ease;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,0.35);
+}
+
+.banner {
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.vcontent {
+  width: 230px;
+  height: 40px;
+  padding:  10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.prize {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 150px;
+  margin-right: 0;
+}
+
+.name {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin: 0 80rpx;
+  padding: 20rpx 0;
+  border-bottom: 0.5rpx solid black;
+  text-align: center;
+  color: black;
+}
+
+.prize > image {
+  height: 50rpx;
+  flex: 0 0 50rpx;
+  margin-right: 20rpx;
+}
+

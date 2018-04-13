@@ -1,5 +1,6 @@
 // pages/show/show.js
 let pin;
+let locations;
 Page({
 
   /**
@@ -16,13 +17,9 @@ Page({
       url: `../vshow/vshow?id=${vendor.id}`
     });
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  
   onLoad: function (options) {
-
     let that = this;
-
     // Get api data
     wx.request({
       url: `http://picchain.herokuapp.com/api/v1/pins/${options.id}`,
@@ -30,13 +27,24 @@ Page({
       success(res) {
         pin = res.data;
 
-        console.log(res.data)
-
         // Update local data
         that.setData({
           pin: pin
         });
-
+        
+        wx.request({
+          url: `http://picchain.herokuapp.com/api/v1/locations/${pin.location_id}`,
+          method: 'GET',
+          success(res) {
+            console.log(res)
+            location = res.data;
+            // Update local data
+            that.setData({
+              location: location
+            });
+            wx.hideToast();
+          }
+        });
         wx.hideToast();
       }
     });
@@ -82,9 +90,15 @@ Page({
     });
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+  goToMap(e) {
+    console.log(e)
+    const location = e.currentTarget.dataset.location;
+    console.log(location.longitude);
+    wx.navigateTo({
+      url: `../pinmap/pinmap?id=${location.id}`
+    });
+  },
+
   onReady: function () {
 
   },

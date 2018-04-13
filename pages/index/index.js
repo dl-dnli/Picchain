@@ -57,12 +57,43 @@ Page({
   },
 
   onUserButtonClicked(e) {
-    const data = e.currentTarget.dataset;
-    const user = data.user;
-
-    wx.navigateTo({
-      url: `../undex/undex?id=${user.id}`
-    });
+      wx.login({
+        success: function (res) {
+          if (res.code) {
+            const code = res.code
+            wx.getUserInfo({
+              success: function (res) {
+                var userInfo = res.userInfo
+                var nickName = userInfo.nickName
+                var avatarUrl = userInfo.avatarUrl
+                var gender = userInfo.gender //性别 0：未知、1：男、2：女
+                var province = userInfo.province
+                var city = userInfo.city
+                var country = userInfo.country
+                const user = {
+                  name: nickName,
+                  avatar: avatarUrl
+                }
+                wx.request({
+                  url: 'http://picchain.herokuapp.com/api/v1/users',
+                  method: 'POST',
+                  data: {
+                    user: user,
+                    code: code
+                  },
+                  success: function (res) {
+                    wx.redirectTo({
+                      url: `/pages/undex/undex?id=${res.data.id}`
+                    });
+                  }
+                })
+              }
+            });
+          } else {
+            console.log('登录失败！' + res.errMsg)
+          }
+        }
+      });
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
