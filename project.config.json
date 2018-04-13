@@ -34,7 +34,7 @@
 		},
 		"miniprogram": {
 			"current": 1,
-			"list": [
+      "list": [
 				{
 					"id": 0,
 					"name": "show",
@@ -79,6 +79,9 @@
 				},
 				{
 					"id": -1,
+					"name": "undex",
+					"pathName": "pages/undex/undex",
+					"query": "",
 					"name": "pinmap",
 					"pathName": "pages/pinmap/pinmap",
 					"query": "id=1"
