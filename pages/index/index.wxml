@@ -17,6 +17,9 @@
     </view>
   </view>
 </view> -->
+<view class="touser" bindtap="onUserButtonClicked">
+  <image src="/images/white/user.png" class="icon" />
+</view>
 
 <view class="page-section">
   <view class="page-section-title">

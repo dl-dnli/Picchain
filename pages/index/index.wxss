@@ -108,7 +108,7 @@
 }
 
 .page-section {
-  margin-top: 40rpx;
+  margin-top: 0;
 }
 
 .page-section-title {
@@ -137,6 +137,7 @@
   height: 450rpx;
   background-size: cover;
   margin-left: 15rpx;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,0.50);
 }
 
 .modal-scroll-view-item_H {
@@ -196,3 +197,21 @@
   bottom: 30rpx;
 }
 
+.touser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #FCBB42;
+  width: 100rpx;
+  height:100rpx;
+  position: absolute;
+  top: 2rpx;
+  margin-left: 15rpx; 
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,0.35);
+}
+
+.icon {
+  height:45rpx;
+  width: 45rpx; 
+}
