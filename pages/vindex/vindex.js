@@ -34,7 +34,7 @@ Page({
     const location = data.location;
 
     wx.navigateTo({
-      url: `../vshow/vshow?id=${location.id}`
+      url: `../show/show?id=${location.top_pin.id}`
     });
   },
 
