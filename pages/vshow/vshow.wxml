@@ -1,7 +1,7 @@
 <view class="card-container">
   <view class="card" data-location="{{location}}">
 
-  <image class="banner" style="background-image: url('{{location.top_pin.image}}');" />
+  <image class="banner" style="background-image: url('{{location.photo}}');" />
 
       <view class="name">
         {{location.name}}
