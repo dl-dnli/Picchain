@@ -25,7 +25,6 @@
               <view class="image-plus-horizontal"></view>
               <view class="image-plus-vertical"></view>
             </view>
-            <view class="image-plus-text">请选择文件</view>
           </block>
         </view>
       <view class="btn-area">
@@ -33,3 +32,5 @@
       </view>
     </view>
   </view>
+
+  
