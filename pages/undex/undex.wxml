@@ -1,7 +1,52 @@
 <!--pages/undex/undex.wxml-->
+<view class="touser" bindtap="onUserButtonClicked">
+  <image src="/images/white/user.png" class="icon" />
+</view>
+<view class="page-section">
+  <view class="page-section-title">
+    <view class="category">My Pins</view>
+  </view>
+  <view class="page-section-spacing">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+      <view wx:for="{{user_pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="onPinClicked" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
+    </scroll-view>
+  </view>
+</view>
+
+<view class="page-section">
+  <view class="page-section-title">
+    <view class="category">My Locations</view>
+  </view>
+  <view class="page-section-spacing">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+      <view wx:for="{{user_locations}}" wx:for-item="location" wx:key="location.id" bindtap="onPinClicked" id="demo1" class="scroll-view-item_H demo-text-1" style="background-image: url('{{location.top_pin.image}}');" data-user_location="{{location}}"></view>
+    </scroll-view>
+  </view>
+</view>
+
+<view class="modal-box" hidden="{{flag}}" bindtap="hide">
+  <view class="modal-body">
+    <view class="modal-content">
+      <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+       <view class="pin-card">
+        <view wx:for="{{user_pins}}" wx:for-item="pin" wx:key="pin.id" bindtap="show" id="demo1" class="card modal-scroll-view-item_H demo-text-1" style="background-image: url('{{pin.image}}');" data-pin="{{pin}}"></view>
+        <view class="card-info"></view>
+      </view> 
+      </scroll-view>
+      <view class="quit-button">
+        <image class="quit" src="/images/grey/quit.png" bindtap="hide"/>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
 <view class="upv-tagbig">
 <view class="woutline flex">
-      <image class="avatar-large" src='https://static.businessinsider.com/image/531f59fdecad04d857ec91c6/image.jpg' />
+      <image class="avatar-large" src='{{user.avatar}}' />
       <view class="author2">
         <view>Gab</view>
       </view>
@@ -37,14 +82,4 @@
     </view>
 
 </view>
-
-<!-- <view class="card-container">
-    <view class="avaname">
-      <image class="avatar-large" src='{{location.photo}}' />
-
-      <view class="name">{{location.name}}</view>
-    </view>
-  </view> -->
-
-  
 </view>
