@@ -9,7 +9,7 @@
       </view>
 
     <view class="outline flex">
-      <image class="avatar-small" src="http://media.lehighvalleylive.com/entertainment-general_impact/photo/guy-fieri-cee642e1641d34c5.jpg" />
+      <image class="avatar-small" src="{{pin.user_avatar}}" />
       <view class="author-name">
         <view class="h3">{{pin.user_name}}</view>
       </view>
