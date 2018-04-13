@@ -1,3 +1,21 @@
+.user-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #8CC152;
+}
+.username {
+    font-size: 40rpx;
+    font-family: 'Titillium';
+}
+
+.avatar-large {
+  border-radius: 100%;
+  height: 200rpx;
+  width: 200rpx;
+}
+
 .pin-title {
   height: 70rpx;
   width: 70rpx;
@@ -97,7 +115,7 @@
   right: 35px;  
 }
 .page-section {
-  margin-top: 0;
+  margin-top: 60rpx;
 }
 .page-section-title {
   margin: 20rpx 0 20rpx 0;
@@ -109,6 +127,10 @@
 }
 .category {
   padding-bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Titillium';
 }
 .scroll-view_H{
   white-space: nowrap;
@@ -190,4 +212,202 @@
 .icon {
   height:45rpx;
   width: 45rpx; 
+}
+
+ .add-location-button {
+    display: block;
+    text-align: center;
+    width: 400rpx;
+    margin-left: 20rpx;
+    padding: 30rpx;
+    background-color: #8CC152;
+    border: 0 !important;
+    color: white;
+    cursor: pointer;
+    font-size: 40rpx;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(black, .2);
+    border-radius: 5rpx;
+    font-family: 'Titillium';
+    /* &:focus {
+      outline: none;
+      transition: transform .15s ease;
+      transform: scale(1.1);
+    } */
+  }
+
+/* pages/show/show.wxss */
+
+/* Banner */
+.banner {
+  height: 60vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,0.35);
+}
+
+
+.upv-tag {
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left: 11px;
+}
+
+.avatar-small {
+  height: 27px;
+  width: 27px;
+  border-radius: 20px
+}
+
+.avatar-large {
+height:70px;
+width:70px;
+border-radius:50px;
+}
+
+.name {
+  font-size: 20px;
+  border-radius: 40px;
+  padding: 8px 10px;
+  margin-top: 5px;
+}
+
+.upv-tag .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.bot {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  color: #8a8a8a;
+}
+
+.bot .icon {
+  width: 25px;
+  height: 25px;
+}
+
+
+/* Reviews */
+
+
+
+.author-name {
+  font-size: 10px;
+  margin-left: 9px;
+}
+
+.map-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFCE54;
+  padding: 10rpx;
+  border-radius: 5px;
+  margin-right: 20rpx;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.avaname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Titillium';
+}
+
+.info-container {
+  margin: 20px 21px;
+  border-radius: 5px;
+  margin: 11px;
+  padding: 10px;
+  
+
+}
+
+.ico {
+  background-color: #FFCE54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10rpx;
+  color: white;
+  font-size: 12px;
+}
+
+.upvotes {
+  margin-left: 3px;
+  font-family: 'Titillium';
+}
+
+.address {
+  overflow-wrap: break-word;
+  width: 240px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline {
+  background-color: #A0D468;
+  /* border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; */
+  border-radius: 5px;
+  margin-left: 7px;
+  padding-right: 7px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: 2px 0px 5px 0px rgba(219,219,219,0.43);
+  margin-bottom: 11px;
+  padding: 20px;
+  background-color: #FFCE54;
+  color: white;
+  width: 200px;
+  height:60px;
+  font-size: 16px; 
+}
+.submit-your-photo {
+  padding: 40rpx;
+  border-radius: 5px;
+  background-color: #A0D468;
+  color: white;
+  font-family: 'Titillium';
+  margin: 40rpx;
+}
+
+.prize, .address {
+  font-family: 'Titillium';
+  font-size: 40rpx;
+}
+
+.prize {
+  margin-left: 15rpx;
+}
+
+.direct-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
 }
