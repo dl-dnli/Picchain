@@ -1,44 +1,18 @@
-// pages/vshow/vshow.js
+// pages/undex/undex.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    scrollTop: 100,
-    scrollLeft: 0,
-    flag: true,
-    hasLocation: false,
-  },
-
-  show: function () {
-    this.setData({ flag: false })
-  },
-
-  hide: function () {
-
-    this.setData({ flag: true })
-
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let that = this;
-    wx.request({
-      url: `http://picchain.herokuapp.com/api/v1/locations/${options.id}`,
-      method: 'GET',
-      success(res) {
-        const location = res.data;
-        // Update local data
-        that.setData({
-          location
-        });
-
-        wx.hideToast();
-      }
-    });
+  
   },
 
   /**

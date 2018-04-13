@@ -1,8 +1,9 @@
-<!--pages/vindex/vindex.wxml-->
+<!--pages/undex/undex.wxml-->
+<text>pages/undex/undex.wxml</text>
 <view class="card-container">
   <view wx:for="{{locations}}" wx:for-item="location" wx:key="location.id" bindtap="onLocationClicked"  class="card" data-location="{{location}}">
 
-  <image class="banner" style="background-image: url('{{location.top_pin.image}}');" />
+  <image class="banner" style="background-image: url('{{location.photo}}');" />
 
       <view class="name">
         {{location.name}}
@@ -13,11 +14,11 @@
          <image class="prize" src='/images/orange/award.png' /> 
          <view class="prize_text">{{location.prize}}</view>
         </view>
-        <view class="prize">
-         <image class="photo-count" src='/images/orange/photo.png' /> 
-         <view class="prize_text">{{location.pins_count}}</view>
+        <view class="count">
+          Photos: {{location.pins_count}}
         </view>
       </view>
+
+
   </view>
 </view>
-
