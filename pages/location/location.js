@@ -16,7 +16,7 @@ Page({
   },
 
   onCancelClicked() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../index/index'
     });
   },

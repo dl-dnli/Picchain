@@ -112,7 +112,7 @@
 }
 
 .page-section-title {
-  margin: 20rpx 0 20rpx 0;
+  margin: 50rpx 0 20rpx 0;
   font-size: 40rpx;
   text-align: center;
 }
@@ -123,6 +123,9 @@
 
 .category {
   padding-bottom: 20rpx;
+  font-family: 'Titillium';
+  color: #8CC152;
+  font-size: 40rpx;
 }
 
 .scroll-view_H{

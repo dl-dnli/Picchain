@@ -11,8 +11,12 @@
     <view class="outline flex">
       <image class="avatar-small" src="{{pin.user_avatar}}" />
       <view class="author-name">
-        <view class="h3">{{pin.user_name}}</view>
+        <view class="username">{{pin.user_name}}</view>
       </view>
+    </view>
+
+    <view class="map-icon" bindtap="goToMap" data-location="{{location}}">
+      <image src="/images/white/map2.png" class="icon" />
     </view>
 
 </view>
@@ -23,21 +27,18 @@
 
       <view class="name">{{pin.location_name}}</view>
     </view>
-  </view>
 
-  <view class="info-container">
+    <view class="bot">
 
-  <view class="prize">{{location.prize}}</view>
-  </view>
+    <view class="map-icon">
+      <image src="/images/white/award.png" class="icon" />
+    </view>
+        <view class="prize">{{location.prize}}</view>
 
-
-  <view class="bot">
-
-    <view class="address">{{location.address}}</view>
-    <view class="map-icon" bindtap="goToMap" data-location="{{location}}">
-      <image src="/images/white/map2.png" class="icon" />
     </view>
   </view>
+
+
 <view class="flex">
-<button bindtap="login" >Submit Your Photo</button>
+<view class="submit-your-photo" bindtap="login" >Compete With Others!</view>
 </view>
