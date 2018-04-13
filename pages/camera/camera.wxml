@@ -16,6 +16,10 @@
 
 <view class="page-body">
     <view class="page-section">
+        <view class="title-row">
+          <image class="camera" src="/images/green/camera.png"/>
+          <view class="form-title">Take a Snap!</view>
+        </view>
         <view class="page-body-info">
           <block wx:if="{{filePath != ''}}">
             <image src="{{filePath}}" class="image" mode="aspectFit"></image>
@@ -28,7 +32,8 @@
           </block>
         </view>
       <view class="btn-area">
-        <button type="primary" bindtap='postPic'>POST</button>
+        <view class='lf--cancel' form-type='submit' bindtap="onCancelClicked" >CANCEL</view>
+        <view class='lf--submit' form-type='submit'>SUBMIT</view>
       </view>
     </view>
   </view>

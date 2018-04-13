@@ -13,6 +13,12 @@ Page({
     params = options;
   },
 
+  onCancelClicked() {
+    wx.switchTab({
+      url: '../index/index'
+    });
+  },
+
   simpleUpload: function () {
     const page = this;
     let filePath = '';

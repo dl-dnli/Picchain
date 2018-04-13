@@ -58,7 +58,7 @@ Page({
 
   onCancelClicked() {
     wx.switchTab({
-      url: '../index/index',
+      url: '../index/index'
     });
   },
 
