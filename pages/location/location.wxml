@@ -10,8 +10,8 @@
     <button class="pic-submit-button" plain="true">Submit</button>
   </view>
 </view> -->
-<view class="form-container">
-  <view class='login-form'>
+<view class="form-container" bindsubmit="bindSubmit">
+  <form class='login-form'>
     <view class="title-row">
       <image class="speaker" src="/images/green/speaker.png"/>
       <view class="form-title">Shout Out Your Place!</view>
@@ -29,8 +29,8 @@
       <input id="prize" class='lf--input' placeholder='Add a prize' type='text'/>
     </view>
     <view class="flex-row-buttons">
-      <view class='lf--cancel' type='submit' bindtap="onCancelClicked" >CANCEL</view>
-      <view class='lf--submit' type='submit'>SUBMIT</view>
+      <view class='lf--cancel' form-type='submit' bindtap="onCancelClicked" >CANCEL</view>
+      <view class='lf--submit' form-type='submit'>SUBMIT</view>
     </view>
-  </view>
+  </form>
 </view>

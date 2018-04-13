@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 40rpx;
 }
 
 .card {
@@ -64,3 +65,42 @@
   margin-right: 20rpx;
 }
 
+.page-section {
+  margin-top: 0;
+}
+
+.scroll-view_H {
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+}
+
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 450rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 50%;
+  height: 450rpx;
+  background-size: cover;
+  margin-left: 15rpx;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,0.50);
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #1AAD19; */
+  color: #FFFFFF;
+  font-size: 36rpx;
+}
+.demo-text-1:before{
+  /* content: 'A'; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
