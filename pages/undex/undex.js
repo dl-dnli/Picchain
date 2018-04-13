@@ -33,6 +33,7 @@ Page({
         const user = res.data
         const user_pins = res.data.user_pins;
         const user_locations = res.data.user_locations;
+        console.log(user_locations)
         // Update local data
         page.setData({
           user: user,
