@@ -195,6 +195,15 @@ page {
     } */
   }
 
+  button {
+    line-height: 1.4;
+    box-sizing: none;
+    margin-right: 0;
+    padding: 30rpx !important;
+    width: 250rpx;
+    border: 0 !important;
+  }
+
    .lf--cancel {
     display: block;
     text-align: center;

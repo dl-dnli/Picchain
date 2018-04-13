@@ -1,4 +1,8 @@
 // pages/map/map.js
+let user_id;
+let lat;
+let lng;
+let location;
 Page({
 
   /**
@@ -8,11 +12,48 @@ Page({
 
   },
 
+  bindSubmit: function(e) {
+
+    console.log(e)
+    wx.getLocation({
+      type: 'wgs84',
+      success: function (res) {
+        console.log(res)
+        lat = res.latitude
+        lng = res.longitude
+        location = {
+          name: e.detail.value.name,
+          prize: e.detail.value.prize,
+          longitude: lng,
+          latitude: lat,
+          user_id: user_id,
+        }
+        wx.request({
+          url: `http://localhost:3000/api/v1/users/${user_id}/locations`,
+          method: 'POST',
+          data: {
+            location: location
+          },
+          success() {
+            // set data on index page and show
+            wx.redirectTo({
+              url: '/pages/index/index'
+            });
+          }
+        });
+      }
+    });
+
+    // Get api data
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
+    user_id = options.user_id
+    console.log(user_id)
   },
 
   onCancelClicked() {

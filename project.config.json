@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 8,
 			"list": [
 				{
 					"id": 0,
@@ -79,11 +79,14 @@
 				},
 				{
 					"id": -1,
-					"name": "undex",
-					"pathName": "pages/undex/undex",
-					"query": "",
 					"name": "pinmap",
 					"pathName": "pages/pinmap/pinmap",
+					"query": "id=1"
+				},
+				{
+					"id": -1,
+					"name": "User Show",
+					"pathName": "pages/undex/undex",
 					"query": "id=1"
 				}
 			]
