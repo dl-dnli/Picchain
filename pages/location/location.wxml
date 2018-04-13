@@ -28,6 +28,9 @@
       </label>
       <input id="password" class='lf--input' placeholder='Add a prize' type='password'/>
     </view>
-    <input class='lf--submit' type='submit' value='SUBMIT'/>
+    <view class="flex-row-buttons">
+      <button class='lf--cancel' type='submit' bindtap="onCancelClicked" >CANCEL</button>
+      <button class='lf--submit' type='submit'>SUBMIT</button>
+    </view>
   </view>
 </view>
