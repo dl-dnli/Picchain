@@ -1,19 +1,7 @@
 Page({
   data: {
-    // latitude: 28.099994,
-    // longitude: 113.324520,
-    // markers: [{
-    //   id: 1,
-    //   latitude: 28.099994,
-    //   longitude: 113.324520,
-    //   name: 'T.I.T 创意园',
-    //   iconPath: '/images/location.png'
-
-    // }]
-
   },
   onLoad: function (options) {
-    console.log(options)
     const page = this
     wx.request({
       url: "http://picchain.herokuapp.com/api/v1/locations",
@@ -43,12 +31,9 @@ Page({
 
       }
     });
-  }
-  ,
+  },
   onReady: function (e) {
     let page = this
     this.mapCtx = wx.createMapContext('myMap')
-
-
   }
 })

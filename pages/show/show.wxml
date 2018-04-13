@@ -18,7 +18,7 @@
 </view>
 
 <view class="card-container">
-    <view class="avaname">
+    <view class="avaname" bindtap='showVendor' data-vendor='{{location}}'>
       <image class="avatar-large" src='{{location.photo}}' />
 
       <view class="name">{{pin.location_name}}</view>
@@ -31,10 +31,10 @@
   </view>
 
 
-  <view class="bot" bindtap="onMapBuClicked">
+  <view class="bot">
 
     <view class="address">{{location.address}}</view>
-    <view class="map-icon">
+    <view class="map-icon" bindtap="goToMap" data-location="{{location}}">
       <image src="/images/white/map2.png" class="icon" />
     </view>
   </view>

@@ -76,6 +76,12 @@
 					"name": "Map",
 					"pathName": "pages/map/map",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pinmap",
+					"pathName": "pages/pinmap/pinmap",
+					"query": "id=1"
 				}
 			]
 		}
